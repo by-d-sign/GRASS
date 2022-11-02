@@ -1,0 +1,34 @@
+{
+  "name": "grass",
+  "version": "1.0.0",
+  "description": "GReen Activity Scheduling Solution – extends Job Scheduling, a fundamental problem of business economics, to also include and optimize for minimal CO2e emissions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./out/index.js",
+    "build": "tsc -p ./tsconfig.json",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/by-d-sign/GRASS.git"
+  },
+  "keywords": [
+    "Carbon Aware SDK",
+    "Scheduling",
+    "Carbon Intensity"
+  ],
+  "author": "Jochen Joswig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/by-d-sign/GRASS/issues"
+  },
+  "homepage": "https://github.com/by-d-sign/GRASS#readme",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.5.2",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
